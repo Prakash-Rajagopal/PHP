@@ -3,6 +3,6 @@ MAINTAINER virgoprak@gmai.com
 
 FROM devopsedu/webapp
 #copy PHP website
-COPY source /var/www/html
+ADD website /var/www/html
 
 CMD ["apachectl", "-D", "FOREGROUND"]
