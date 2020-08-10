@@ -1,0 +1,8 @@
+FROM ubuntu
+MAINTAINER virgoprak@gmai.com
+
+FROM devopsedu/webapp
+#copy PHP website
+COPY source /var/www/html
+
+CMD ["apachectl", "-D", "FOREGROUND"]
